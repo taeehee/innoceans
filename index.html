@@ -9,10 +9,10 @@
     <script>
         window.onload = () => {
             document.querySelector('.nav_btn').addEventListener('click', () => {
-                document.querySelector('.nav_mobile').classList('active');
+                document.querySelector('.nav_mobile').classList.add('active');
             });
             document.querySelector('.close_btn').addEventListener('click', () => {
-                document.querySelector('.nav_mobile').classList('remove');
+                document.querySelector('.nav_mobile').classList.remove('active');
             });
 
         };//script end
