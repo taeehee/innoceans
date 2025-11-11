@@ -7,6 +7,13 @@
     <title>이노션에스</title>
     <link rel="stylesheet" href="css/index.css">
     <script>
+        //코드 해석
+        //'.nav_btn'이라는 클래스를 가진 요소를 찾아서, 클릭 이벤트를 추가하고, 
+        //클릭 시 {중괄호 내용}을 실행시켜라.
+        // {'.nav_mobile'이라는 클래스를 가진 요소를 찾아서, active라는 클래스를 추가해라}
+        //'.close_btn'이라는 클래스를 가진 요소를 찾아서, 클릭 이벤트를 추가하고,
+        //클릭 시 {중괄호 내용}을 실행시켜라.
+        //{'.nav_mobile'이라는 클래스를 가진 요소를 찾아서 active라는 클래스를 제거해라}
         window.onload = () => {
             document.querySelector('.nav_btn').addEventListener('click', () => {
                 document.querySelector('.nav_mobile').classList.add('active');
@@ -28,7 +35,7 @@
                 </a>
             </h1><!-- logo end -->
 
-            <!-- 데스크탑ver, 모바일ver nav 각각 만들어주기 -->
+            <!-- nav 데스크탑.ver, 모바일.ver 각각 만들어주기 -->
             <nav class="nav_pc pc">
                 <ul class="gnb"> <!-- 각 a태그들을 li로 감싸줘야함!! -->
                     <li><a href="#">ABOUTS</a></li>
@@ -39,28 +46,23 @@
                     <li><a href="#">CONTACTS</a></li>
                 </ul><!-- gnb end -->
             </nav><!-- nav_pc end -->
-            <ul class="lang_pc"> <!-- 각 a태그들을 li로 감싸줘야함!! -->
+
+            <ul class="lang pc"> <!-- 각 a태그들을 li로 감싸줘야함!/ 클래스명 lang_pc pc(x) -->
                 <li><a href="#">KOR</a></li>
                 <li><a href="#">ENG</a></li>
-            </ul><!-- lang_pc end -->
+            </ul><!-- lang end -->
 
-
-
-            <button class="nav_btn mobile">
-                <a href="#">
+            <button class="nav_btn mobile"> <!-- 버튼img에 a태그 씌우지말 것!(버튼태그는 a태그와 쓰지않는다) -->
                     <img src="img/icon/이노션btn_menu.svg" alt="메뉴보기">
-                </a>
-            </button><!-- nav_btn mobile end -->
+            </button><!-- nav_btn end -->
 
-            <!-- 데스크탑ver, 모바일ver nav 각각 만들어주기 -->
+            <!-- nav 데스크탑.ver, 모바일.ver 각각 만들어주기 -->
             <nav class="nav_mobile mobile">
-                <button class="close_btn">
-                    <a href="#">
+                <button class="close_btn"> <!-- 버튼img에 a태그 씌우지말 것!(버튼태그는 a태그와 쓰지않는다) -->
                         <img src="img/icon/이노션_close.svg" alt="메뉴닫기">
-                    </a>
                 </button><!-- close_btn end -->
 
-                <ul class="gnb"> <!-- 각 a태그들을 li로 감싸줘야함!! -->
+                <ul class="gnb">
                     <li><a href="#">ABOUTS</a></li>
                     <li><a href="#">WORKS</a></li>
                     <li><a href="#">SOLUTIONS</a></li>
@@ -75,8 +77,6 @@
                 </ul><!-- lang end -->
             </nav><!-- nav_mobile end -->
 
-
-
         </div><!-- inner end -->
     </header><!-- header end -->
 
@@ -85,8 +85,6 @@
             <img src="img/메인사진.png" alt="We are Innovative Solutionists">
         </section><!-- main_visual end -->
     </main><!-- main end -->
-
-
+    
 </body>
-
 </html>

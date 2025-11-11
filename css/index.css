@@ -128,19 +128,24 @@ button {
         height: 100%;
         position: fixed;
         right: -100%;
+        /* 화면이 모바일크기가 되었을때 nav는 보이지않도록. (right:-100%로 화면밖 숨김) */
         top: 0;
         background-color: #000;
         padding: 155px 32px 24px 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-end;/* 오른쪽 배치 */
-        text-align: right;/* 우측정렬 */
+        align-items: flex-end;
+        /* 오른쪽 배치 */
+        text-align: right;
+        /* 우측정렬 */
     }
 
-        .header .inner .nav_mobile.active{
-            right: 0;
-        }
+    .header .inner .nav_mobile.active {
+        right: 0;
+        /* active실행하여 right:-100%로 숨겨놨던 네비게이션 불러오기 */
+    }
+
     .header .inner .nav_mobile .close_btn {
         position: absolute;
         top: 17px;
@@ -166,4 +171,6 @@ button {
         padding: 6px 8px;
 
     }
-}/* 1024px */
+}
+
+/* 1024px */
